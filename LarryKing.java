@@ -6,22 +6,20 @@ public class LarryKing extends Player {
   }
   
   public void battleChoice() {
-    public void battleChoice() {
-      int choice = rand.nextInt(2);
-      if (choice == 0) {
-         System.out.println("Bill attacks!");
-         attack();
-      } else if (choice == 1) {
-         System.out.println("Bill blocks!");
-         block();
-      } else {
-         System.out.println("Larry takes a nap!");
-      }
+    int choice = rand.nextInt(2);
+    if (choice == 0) {
+       System.out.println("Bill attacks!");
+       attack();
+    } else if (choice == 1) {
+       System.out.println("Bill blocks!");
+       block();
+    } else {
+       System.out.println("Larry takes a nap!");
     }
   }
   
   //Print his face in console
-  facePrint() {
+  public void facePrint() {
     System.out.println(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
     System.out.println(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
     System.out.println(",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,*/%&&&&&&&&&&&&&&&%(/*,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,");
